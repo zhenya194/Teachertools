@@ -6,3 +6,7 @@
 # Description
 
 Teachertools is a library for Python.
+
+# Libraries
+
+This project use `pytest` library for tests.
