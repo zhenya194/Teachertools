@@ -1,3 +1,9 @@
 [run]
 omit =
-    teachertools/.gitignore
+    */LICENSE
+    */README.md
+    tests/*
+
+[report]
+skip_empty = True
+show_missing = True
