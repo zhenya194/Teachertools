@@ -1,6 +1,6 @@
 # Teachertools
 
-[![License](https://img.shields.io/badge/license-GPL--3.0--or--later-green.svg)](./LICENSES/GPL-3.0-or-later.txt)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/status-active--development-orange)
 
 # Description
