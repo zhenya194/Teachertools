@@ -7,5 +7,3 @@ def average_mark(*marks):
         amount += 1
     ave_mark = sum_of_marks / amount
     return ave_mark
-
-print(average_mark(5, 9))
