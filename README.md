@@ -5,7 +5,7 @@
 
 # Description
 
-Teachertools is a library for Python.
+Teachertools is a library for Python that made for teachers.
 
 # Libraries
 
