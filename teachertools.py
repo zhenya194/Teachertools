@@ -7,3 +7,8 @@ def average_mark(*marks:list[int | float]):
         amount += 1
     average_mark = sum_of_marks / amount
     return average_mark
+
+def students(*students:str) -> None:
+    print("------- STUDENTS -------\n\n")
+    for i in range(len(students)):
+        print(f"----  {students[i]}  ----\n")
