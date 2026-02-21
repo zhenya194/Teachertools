@@ -1,4 +1,4 @@
-from teachertools import *
+# from teachertools import *
 
-s:list = ["one", "two", "three", "four"]
-students(*s)
+# s:list = ["one", "two", "three", "four"]
+# students(*s)
