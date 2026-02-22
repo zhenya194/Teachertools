@@ -13,7 +13,7 @@ def students(*students:str) -> None:
     for i in range(len(students)):
         print(f"----  {students[i]}  ----\n")
 
-def is_enter(*marks:list[int | float], needmark):
+def is_enter(*marks:list[int | float], needmark:int | float):
     completed:int = 0
     for i in range(len(marks)):
         if marks[i] >= needmark:
