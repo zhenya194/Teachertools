@@ -19,3 +19,7 @@ def is_enter(completed_mark, *marks):
         if marks[i] >= completed_mark:
             completed += 1
     return completed
+
+def schedual(schedual:dict[str, str | int | float]) -> None:
+    for lesson, time in schedual.items():
+        print(f"{lesson} - {time}\n")
