@@ -8,17 +8,23 @@ def average_mark(*marks:list[int | float]):
     average_mark = sum_of_marks / amount
     return average_mark
 
-def students(*students:str) -> None:
-    print("------- STUDENTS -------\n\n")
-    for i in range(len(students)):
-        print(f"----  {students[i]}  ----\n")
-
 def is_enter(completed_mark, *marks):
     completed:int = 0
     for i in range(len(marks)):
         if marks[i] >= completed_mark:
             completed += 1
     return completed
+
+def students(*students:list) -> None:
+    print("------- STUDENTS -------\n\n")
+    for i in range(len(students)):
+        print(f"----  {students[i]}  ----\n")
+
+def get_students_file(*students:list):
+    with open("students.txt", "w") as file:
+        file.write("------- STUDENTS -------\n\n")
+        for i in range(len(students)):
+            file.write(f"----  {students[i]}  ----\n")
 
 def schedual(schedual:dict[str, str | int | float]) -> None:
     print("------- SCHEDUAL -------")
