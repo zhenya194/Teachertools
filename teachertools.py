@@ -21,5 +21,6 @@ def is_enter(completed_mark, *marks):
     return completed
 
 def schedual(schedual:dict[str, str | int | float]) -> None:
+    print("------- SCHEDUAL -------")
     for lesson, time in schedual.items():
         print(f"{lesson} - {time}\n")
