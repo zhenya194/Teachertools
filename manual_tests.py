@@ -6,4 +6,6 @@ from teachertools import *
 # print(is_enter(12, 10, 1, 4, 7, 4, 6))
 
 sc = {"math":"12:00", "it":"14:00"}
-print(schedual(sc))
+
+# print(schedual(sc))
+print(get_schedual_file(sc))

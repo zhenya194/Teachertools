@@ -20,8 +20,8 @@ def students(*students:list) -> None:
     for i in range(len(students)):
         print(f"----  {students[i]}  ----\n")
 
-def get_students_file(*students:list):
-    with open("students.txt", "w") as file:
+def get_students_file(*students:list) -> None:
+    with open("students.txt", "w", encoding="UTF-8") as file:
         file.write("------- STUDENTS -------\n\n")
         for i in range(len(students)):
             file.write(f"----  {students[i]}  ----\n")
@@ -30,3 +30,10 @@ def schedual(schedual:dict[str, str | int | float]) -> None:
     print("------- SCHEDUAL -------")
     for lesson, time in schedual.items():
         print(f"{lesson} - {time}\n")
+
+def get_schedual_file(schedual:dict[str, str | int | float]) -> None:
+    with open("schedual.txt", "w", encoding="UTF-8") as file:
+        print("------- SCHEDUAL -------\n\n")
+        for lesson, time in schedual.items():
+            file.write(f"{lesson} - {time}\n")
+            print(f"{lesson} - {time}\n")
