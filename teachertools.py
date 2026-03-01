@@ -39,13 +39,11 @@ def get_schedual_file(schedual:dict[str, str | int | float]):
             print(f"{lesson} - {time}\n")
 
 def schedual_plus(clas:list, schedual:dict[str, str | int | float]):
-    print("------- SCHEDUAL -------")
-    for lesson, time in schedual.items():
-        for cl in range(len(clas)):
-            print(f"{lesson} - {time} in {clas[cl]} class\n")
+    print("------- SCHEDUAL -------\n\n")
+    for (lesson, time), cl in zip(schedual.items(), range(len(clas))):
+            print(f"{lesson} - {time} in {cl} class\n")
 
 def get_schedual_plus_file(clas:list, schedual:dict[str, str | int | float]):
-    with open("schedual_plus", "w", encoding="UTF-8") as file:
-        for lesson, time in schedual.items():
-            for cl in range(len(clas)):
+    with open("schedual_plus.txt", "w", encoding="UTF-8") as file:
+        for (lesson, time), cl in zip(schedual.items(), range(len(clas))):
                 file.write(f"{lesson} - {time} in {clas[cl]} class\n")

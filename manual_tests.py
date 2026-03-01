@@ -7,8 +7,8 @@ from teachertools import *
 
 sc:dict = {"math":"12:00", "it":"14:00"}
 cla:list = ["2-g", "10-c"]
-# print(schedual_plus(cla, sc))
-get_schedual_plus_file(cla, sc)
+print(schedual_plus(cla, sc))
+# get_schedual_plus_file(cla, sc)
 
 # # print(schedual(sc))
 # print(get_schedual_file(sc))
