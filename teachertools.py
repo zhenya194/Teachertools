@@ -15,25 +15,31 @@ def is_enter(completed_mark, *marks):
             completed += 1
     return completed
 
-def students(*students:list) -> None:
+def students(*students:list):
     print("------- STUDENTS -------\n\n")
     for i in range(len(students)):
         print(f"----  {students[i]}  ----\n")
 
-def get_students_file(*students:list) -> None:
+def get_students_file(*students:list):
     with open("students.txt", "w", encoding="UTF-8") as file:
         file.write("------- STUDENTS -------\n\n")
         for i in range(len(students)):
             file.write(f"----  {students[i]}  ----\n")
 
-def schedual(schedual:dict[str, str | int | float]) -> None:
+def schedual(schedual:dict[str, str | int | float]):
     print("------- SCHEDUAL -------")
     for lesson, time in schedual.items():
         print(f"{lesson} - {time}\n")
 
-def get_schedual_file(schedual:dict[str, str | int | float]) -> None:
+def get_schedual_file(schedual:dict[str, str | int | float]):
     with open("schedual.txt", "w", encoding="UTF-8") as file:
         print("------- SCHEDUAL -------\n\n")
         for lesson, time in schedual.items():
             file.write(f"{lesson} - {time}\n")
             print(f"{lesson} - {time}\n")
+
+def schedual_plus(clas:list, schedual:dict[str, str | int | float]):
+    print("------- SCHEDUAL -------")
+    for lesson, time in schedual.items():
+        for cl in range(len(clas)):
+            print(f"{lesson} - {time} in {clas[cl]} class\n")
