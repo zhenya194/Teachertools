@@ -52,3 +52,9 @@ def plans(plan:list):
     print("------ PLANS ------\n")
     for i in range(len(plan)):
         print(f"\n{plan[i]}")
+
+def get_plans_file(plan:list):
+    with open("plans.txt", "w", encoding="UTF-8") as file:
+        file.write("------ PLANS ------\n")
+        for i in range(len(plan)):
+            file.write(f"\n{plan[i]}")
