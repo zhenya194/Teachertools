@@ -49,12 +49,12 @@ def get_schedual_plus_file(clas:list, schedual:dict[str, str | int | float]):
                 file.write(f"{lesson} - {time} in {clas[cl]} class\n")
 
 def plans(plan:list):
-    print("------ PLANS ------\n")
+    print("------ PLANS ------\n\n")
     for i in range(len(plan)):
-        print(f"\n{plan[i]}")
+        print(f"{plan[i]}\n")
 
 def get_plans_file(plan:list):
     with open("plans.txt", "w", encoding="UTF-8") as file:
-        file.write("------ PLANS ------\n")
+        file.write("------ PLANS ------\n\n")
         for i in range(len(plan)):
-            file.write(f"\n{plan[i]}")
+            file.write(f"{plan[i]}\n")
