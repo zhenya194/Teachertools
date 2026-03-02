@@ -47,3 +47,8 @@ def get_schedual_plus_file(clas:list, schedual:dict[str, str | int | float]):
     with open("schedual_plus.txt", "w", encoding="UTF-8") as file:
         for (lesson, time), cl in zip(schedual.items(), range(len(clas))):
                 file.write(f"{lesson} - {time} in {clas[cl]} class\n")
+
+def plans(plan:list):
+    print("------ PLANS ------\n")
+    for i in range(len(plan)):
+        print(f"\n{plan[i]}")
