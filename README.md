@@ -1,7 +1,6 @@
 # Teachertools
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-![Status](https://img.shields.io/badge/status-active--development-orange)
 
 Teachertools is a library for Python that made for teachers.
 
