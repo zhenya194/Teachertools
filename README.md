@@ -4,6 +4,9 @@
 
 Teachertools is a library for Python that made for teachers.
 
+> [!IMPORTANT]
+> Archived.
+
 ## Commands
 
 Read our [wiki](https://github.com/zhenya194/Teachertools/wiki) to see the commands of this library.
